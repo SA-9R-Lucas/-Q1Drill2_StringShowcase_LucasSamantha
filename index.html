@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drill 2: Working on Strings</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: rgb(248, 240, 221);
+      }
+      input, button {
+        margin-top: 10px;
+        padding: 8px;
+        display: block;
+        background-color: rgb(253, 185, 219);
+      }
+      #output {
+        margin-top: 20px;
+        white-space: pre-wrap;
+        background: #f7bbbb;
+        padding: 15px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>Basic Information Form😶‍🌫️</h1>
+
+    <label for="name">Please enter your name here!:</label>
+    <input id="name" type="text" />
+
+    <label for="age">Please enter your age here!:</label>
+    <input id="age" type="number" />
+
+    <label for="school">Enter your school institution here!:</label>
+    <input id="school" type="text" />
+
+    <button id="submit-btn">Generate Message</button>
+
+    <div id="output"></div>
+
+    <py-config>
+      [[fetch]]
+      files = ["main.py"]
+    </py-config>
+
+    <script type="py" src="./main.py"></script>
+
+  </body>
+</html>
